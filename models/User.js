@@ -39,7 +39,7 @@ const UserSchema = new Schema({
   },
   CityType:{
     type:String,
-    default:'metro', // 0  is for metro city , 1 is for non-metro city
+    default:'metro', 
     enum:['metro','non-metro']
   },
   Med:{

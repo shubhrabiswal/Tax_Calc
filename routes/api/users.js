@@ -134,12 +134,12 @@ router.post("/amountinput", (req, res) => {
   var value2 = Rent - (0.10*Bas);
   if(CityType == 'metro'){
     var value1 = 0.50*Bas;
-    AppHRA = Math.min(value1,value2,AppHRA);
+    AppHRA = Math.min(value1,value2,HRA);
   }
 
   if(CityType == 'non-metro'){
     var value1 = 0.40*Bas;
-    AppHRA = Math.min(value1,value2,AppHRA);
+    AppHRA = Math.min(value1,value2,HRA);
   }
 
   // Bas||!LTA||!HRA||!FA||!Inv||!Rent||!CityType||!Med
